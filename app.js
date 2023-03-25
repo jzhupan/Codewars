@@ -97,3 +97,16 @@ For example (Input -> Output):
 2 -> 3 (1 + 2)
 8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
 */
+
+var summation = function (num) {
+  // Code here
+  //console.log(num) //output 1
+  let sum = 0
+  for(let i = 0; i <= num; i ++){
+    sum += i
+  }
+  console.log(sum)
+  return sum
+}
+
+
