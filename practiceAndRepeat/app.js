@@ -89,3 +89,134 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   return yearsDifference
 }
 
+//Regex validate PIN code
+function validatePIN (pin) {
+  //return true or false
+   let isnum = /^\d+$/.test(pin);
+   if(!isnum){
+     return false
+   } if(pin.length == 4 && parseInt(pin)){
+     return true
+   } else if(pin.length == 6 && parseInt(pin)){
+     return true 
+   } else if(pin == '0000' || pin == '000000') {
+     return true
+   } else {
+     return false
+   }
+}
+
+//Fake Binary
+function fakeBin(x){
+  let numReplace = ''
+  for(let i =0; i< x.length; i++){
+      if(x[i] < 5){
+       numReplace += 0
+    } else {
+        numReplace += 1
+    }
+  }
+    return numReplace 
+}
+
+//Odd or Even?
+function oddOrEven(array) {
+  //enter code here
+ let sum = array.reduce((acc, value) => {
+   return acc + value
+},0);
+ if(sum % 2 == 0){
+   return "even"
+ } else {
+   return "odd"
+ }
+}
+
+//Are You Playing Banjo?
+function areYouPlayingBanjo(name) {
+  // Implement me
+  if(name[0] == 'R' || name[0] == 'r'){
+    return name + " plays banjo" 
+  } else {
+    return name + " does not play banjo"
+  }
+}
+
+//Will you make it?
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+  const currentDistanceToPump = mpg * fuelLeft
+  const needFuelOrNot = distanceToPump - currentDistanceToPump
+  if(needFuelOrNot <= 0){
+    return true
+  } else {
+    return false
+  }
+};
+
+//Is this a triangle?
+function isTriangle(a,b,c){
+  //1 ,2 , 2 || 7 ,2 ,2
+ if(a + b > c && a + c > b && c + b > a){
+   return true
+ } else {
+   return false
+ }
+}
+
+//Abbreviate a Two Word Name
+function abbrevName(name){
+  // code away
+let splitWords = name.split(' ')
+//console.log(splitWords) //'Sam' , 'Harris'
+let initials = splitWords[0][0] + '.' + splitWords[1][0]
+let initialString = initials.toString()
+let initialsInCaps = initialString.toUpperCase()
+return initialsInCaps
+}
+
+//Reversed sequence
+const reverseSeq = n => {
+  let array = []
+  for(let i =1; i<= n; i++){
+   array.push(i)
+  }
+  let reversed = array.reverse()
+  return reversed
+};
+
+//Quarter of the year
+const quarterOf = (month) => {
+  // Your code here
+  switch(month) {
+      case 1 : case 2: case 3: 
+      return 1;
+      case 4 : case 5: case 6: 
+      return 2;
+      case 7 : case 8: case 9: 
+      return 3;
+      case 10 : case 11: case 12: 
+      return 4;
+      default: return 'could not found month'
+  }
+}
+
+//Training JS #7: if..else and ternary operator
+// function saleHotdogs(n){
+//  if(n < 5){
+//    return n * 100
+//  } else if (n >= 5 && n < 10){
+//    return n * 95
+//  } else if( n >= 10){
+//    return n * 90
+//  } else {
+//    'No luck in sales today'
+//  }
+// }
+//elegant Ternary operator
+function saleHotdogs(n){
+  return n < 5 ? n * 100 
+  : n >= 5 && n < 10 ? n * 95 
+  : n >= 10 ? n * 90 
+  : 'no luck with sales today'
+}
