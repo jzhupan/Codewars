@@ -220,3 +220,41 @@ function saleHotdogs(n){
   : n >= 10 ? n * 90 
   : 'no luck with sales today'
 }
+
+// Function 2 - squaring an argument
+// Write the "square"-function here
+function square(num){
+  let sqrNum = num * num
+  return sqrNum
+}
+
+//What is between?
+function between(a, b) {
+  // your code here
+  let array = []
+  for(let i = a; i <= b; i++){
+    console.log(array.push(i))
+  }
+  return array
+}
+
+//Grasshopper - Debug sayHello
+function sayHello(name) {
+  return `Hello, ${name}`
+}
+
+//Find the stray number
+   function stray(numbers) {
+    let findStray = numbers.find(num => numbers[0] != numbers[1] ? num != numbers[2] : num != numbers[0])
+    return findStray
+  }
+
+//Convert a Boolean to a String
+function booleanToString(b){
+  //your code here
+  if(b) {
+    return 'true'
+  } else {
+    return 'false'
+  }
+}
