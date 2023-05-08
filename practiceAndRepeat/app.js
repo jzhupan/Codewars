@@ -258,3 +258,74 @@ function booleanToString(b){
     return 'false'
   }
 }
+
+//Correct the mistakes of the character recognition software
+
+function correct(string){
+  	// your code here
+  let newString = ''
+  let chars = {
+  5: 'S',
+  0: 'O',
+  1: 'I'
+  }
+  
+  newString = string.replace(/[501]/g, m => chars[m]);
+  return newString
+}
+
+//Remove anchor from URL
+function removeUrlAnchor(url){
+  // TODO: complete
+ if(!url.includes('#')){
+   return url
+ } else if(url.includes('#')){
+   let noHash = url.split('#')[0]
+   return noHash
+ }
+}
+
+//Welcome!
+function greet(language) {
+  let welcomeList = {
+  english: 'Welcome',
+  czech: 'Vitejte',
+  danish: 'Velkomst',
+  dutch: 'Welkom',
+  estonian: 'Tere tulemast',
+  finnish: 'Tervetuloa',
+  flemish: 'Welgekomen',
+  french: 'Bienvenue',
+  german: 'Willkommen',
+  irish: 'Failte',
+  italian: 'Benvenuto',
+  latvian: 'Gaidits',
+  lithuanian: 'Laukiamas',
+  polish: 'Witamy',
+  spanish: 'Bienvenido',
+  swedish: 'Valkommen',
+  welsh: 'Croeso'
+}
+  //console.log(welcomeList[`${language}`])
+  let langIncluded = Object.keys(welcomeList).includes(language)
+  if(langIncluded){
+    return welcomeList[`${language}`]
+  } else {
+    return welcomeList['english']
+  }
+}
+
+//Beginner - Lost Without a Map
+function maps(x){
+  let multiplication = x.map((num) => num * 2)
+  console.log(multiplication)
+  return multiplication
+}
+
+//List Filtering
+function filter_list(l) {
+  // Return a new array with the strings filtered out
+  let newList = l.filter(num => typeof num === 'number')
+  return newList
+ 
+}
