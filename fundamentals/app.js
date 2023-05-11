@@ -1,4 +1,4 @@
-//Sum Mixed Array
+//Sum Mixed Array @1
 /*
 Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
 Return your answer as a number.
@@ -26,7 +26,7 @@ function sumMix(x){
 
 
 
-// Convert number to reversed array of digits
+// Convert number to reversed array of digits @2
 
 function digitize(n) {
   //code here
@@ -40,7 +40,7 @@ function digitize(n) {
 
 
 
-//Reversed Strings
+//Reversed Strings @3
 //Complete the solution so that it reverses the string passed into it.
 
 // 'world'  =>  'dlrow'
@@ -60,7 +60,7 @@ function solution(str){
 
 
 
-//Converting string into a Number!
+//Converting string into a Number! @4
 /*
 Note: This kata is inspired by Convert a Number to a String!. Try that one too.
 
@@ -87,7 +87,7 @@ const stringToNumber = function(str){
 
 
 
-//Grasshopper - Summation
+//Grasshopper - Summation @5
 
 /*
 Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
@@ -112,7 +112,7 @@ var summation = function (num) {
 
 
 
-//Remove String Spaces
+//Remove String Spaces @27
 /*
 Write a function that removes the spaces from the string, then return the resultant string.
 
@@ -131,10 +131,7 @@ function noSpace(x){
 }
 
 
-<<<<<<< HEAD
-
-=======
-//Grasshopper - Grade book
+//Grasshopper - Grade book @7
 /*
 Grade book
 Complete the function so that it finds the average of the three scores passed to it and 
@@ -168,7 +165,7 @@ function getGrade (s1, s2, s3) {
 }
 
 
-//Keep Hydrated!
+//Keep Hydrated! @8
 /*
 Nathan loves cycling.
 
@@ -193,10 +190,9 @@ function litres(time) {
   return amountOfWaterNeeded; 
 }
 
->>>>>>> 77d8a8b8a1b154297565d4331f5803922920f871
 
 
-//Reverse words
+//Reverse words @9
 /*
 Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
 
@@ -220,7 +216,7 @@ function reverseWords(str) {
   }
 
 
-// Invert Values
+// Invert Values @10
 /*
 Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
 

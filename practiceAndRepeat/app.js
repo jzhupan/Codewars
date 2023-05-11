@@ -1,18 +1,18 @@
-//String to Number
+//Convert a String to Number @40
 const stringToNumber = function(str){
     // put your code here
     let number = Number(str)
     return number;
   }
 
-//You can't Code Under Pressure #1
+//You can't Code Under Pressure #1 @26
 function doubleInteger(i) {
   // i will be an integer. Double it and return it.
   let doubleNum = i * 2
   return doubleNum;
 }
 
-//Convert boolean values to strings 'Yes' or 'No'.
+//Convert boolean values to strings 'Yes' or 'No'. @39
 function boolToWord( bool ){
   if(bool == true){
     return 'Yes'
@@ -21,14 +21,14 @@ function boolToWord( bool ){
   }
 }
 
-//MakeUpperCase
+//MakeUpperCase @18
 function makeUpperCase(str) {
   // Code here
   let upperCase = str.toUpperCase()
   return upperCase
 }
 
-//String repeat
+//String repeat @ 11
 
 function repeatStr (n, s) {
   let stringTimes= '';
@@ -39,7 +39,7 @@ function repeatStr (n, s) {
   return stringTimes;
 }
 
-//Switch it Up!
+//Switch it Up! @38
 function switchItUp(number){
   //Write your own Code!
     switch(number) {
@@ -78,7 +78,7 @@ function switchItUp(number){
     }
   }
 
-//Twice as Old
+//Twice as Old @24
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   // your code here
   let sonsDoubleAge = sonYearsOld * 2
@@ -89,7 +89,7 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   return yearsDifference
 }
 
-//Regex validate PIN code
+//Regex validate PIN code @37
 function validatePIN (pin) {
   //return true or false
    let isnum = /^\d+$/.test(pin);
@@ -106,7 +106,7 @@ function validatePIN (pin) {
    }
 }
 
-//Fake Binary
+//Fake Binary @16
 function fakeBin(x){
   let numReplace = ''
   for(let i =0; i< x.length; i++){
@@ -119,7 +119,8 @@ function fakeBin(x){
     return numReplace 
 }
 
-//Odd or Even?
+//Odd or Even? @19
+
 function oddOrEven(array) {
   //enter code here
  let sum = array.reduce((acc, value) => {
@@ -132,7 +133,7 @@ function oddOrEven(array) {
  }
 }
 
-//Are You Playing Banjo?
+//Are You Playing Banjo? @15
 function areYouPlayingBanjo(name) {
   // Implement me
   if(name[0] == 'R' || name[0] == 'r'){
@@ -142,7 +143,7 @@ function areYouPlayingBanjo(name) {
   }
 }
 
-//Will you make it?
+//Will you make it? @23
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   // TODO
   const currentDistanceToPump = mpg * fuelLeft
@@ -154,7 +155,7 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   }
 };
 
-//Is this a triangle?
+//Is this a triangle? @22
 function isTriangle(a,b,c){
   //1 ,2 , 2 || 7 ,2 ,2
  if(a + b > c && a + c > b && c + b > a){
@@ -164,7 +165,7 @@ function isTriangle(a,b,c){
  }
 }
 
-//Abbreviate a Two Word Name
+//Abbreviate a Two Word Name @36
 function abbrevName(name){
   // code away
 let splitWords = name.split(' ')
@@ -175,7 +176,7 @@ let initialsInCaps = initialString.toUpperCase()
 return initialsInCaps
 }
 
-//Reversed sequence
+//Reversed sequence @20
 const reverseSeq = n => {
   let array = []
   for(let i =1; i<= n; i++){
@@ -185,7 +186,7 @@ const reverseSeq = n => {
   return reversed
 };
 
-//Quarter of the year
+//Quarter of the year @28
 const quarterOf = (month) => {
   // Your code here
   switch(month) {
@@ -201,7 +202,7 @@ const quarterOf = (month) => {
   }
 }
 
-//Training JS #7: if..else and ternary operator
+//Training JS #7: if..else and ternary operator @30
 // function saleHotdogs(n){
 //  if(n < 5){
 //    return n * 100
@@ -221,14 +222,14 @@ function saleHotdogs(n){
   : 'no luck with sales today'
 }
 
-// Function 2 - squaring an argument
+// Function 2 - squaring an argument @25
 // Write the "square"-function here
 function square(num){
   let sqrNum = num * num
   return sqrNum
 }
 
-//What is between?
+//What is between? @29
 function between(a, b) {
   // your code here
   let array = []
@@ -238,18 +239,18 @@ function between(a, b) {
   return array
 }
 
-//Grasshopper - Debug sayHello
+//Grasshopper - Debug sayHello @35
 function sayHello(name) {
   return `Hello, ${name}`
 }
 
-//Find the stray number
+//Find the stray number @34
    function stray(numbers) {
     let findStray = numbers.find(num => numbers[0] != numbers[1] ? num != numbers[2] : num != numbers[0])
     return findStray
   }
 
-//Convert a Boolean to a String
+//Convert a Boolean to a String @31
 function booleanToString(b){
   //your code here
   if(b) {
@@ -259,7 +260,7 @@ function booleanToString(b){
   }
 }
 
-//Correct the mistakes of the character recognition software
+//Correct the mistakes of the character recognition software @32
 
 function correct(string){
   	// your code here
@@ -274,7 +275,7 @@ function correct(string){
   return newString
 }
 
-//Remove anchor from URL
+//Remove anchor from URL @21
 function removeUrlAnchor(url){
   // TODO: complete
  if(!url.includes('#')){
@@ -285,7 +286,7 @@ function removeUrlAnchor(url){
  }
 }
 
-//Welcome!
+//Welcome! @17
 function greet(language) {
   let welcomeList = {
   english: 'Welcome',
@@ -315,14 +316,14 @@ function greet(language) {
   }
 }
 
-//Beginner - Lost Without a Map
+//Beginner - Lost Without a Map@12
 function maps(x){
   let multiplication = x.map((num) => num * 2)
   console.log(multiplication)
   return multiplication
 }
 
-//List Filtering
+//List Filtering @33
 function filter_list(l) {
   // Return a new array with the strings filtered out
   let newList = l.filter(num => typeof num === 'number')
