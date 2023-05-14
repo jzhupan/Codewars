@@ -7,13 +7,16 @@ Example
 ""             =>  ""
 */
 
+
 // complete the function
 function solution(string) {
-  for(let i =0; i < string.length; i ++){
-    if(string[i] == string[i].toUpperCase()){
-      let addSpace = string.replace(/([A-Z])/g, ' $1')
-      return addSpace
-      }
+    for(let i =0; i < string.length; i ++){
+      if(string[i] != string[i].toUpperCase() && string === ''){
+        return string
+        } else{
+        let addSpace = string.replace(/([A-Z])/g, ' $1')
+        return addSpace
+        }
+    }
   }
-}
-
+  
